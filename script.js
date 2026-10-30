@@ -106,5 +106,3 @@ window.addEventListener('load', () => {
 })();
 // Local visitor counter: counts this browser only. A real shared total needs a hosted counter/database service.
 const countKey='profile_site_visit_count_v1';const seenKey='profile_site_seen_v1';let count=Number(localStorage.getItem(countKey)||0);if(!sessionStorage.getItem(seenKey)){count++;localStorage.setItem(countKey,count);sessionStorage.setItem(seenKey,'1');}document.getElementById('visit-count').textContent=String(count).padStart(3,'0');
-// Mouse parallax + subtle red cursor sparks.
-let mx=0,my=0;window.addEventListener('mousemove',e=>{mx=(e.clientX/innerWidth-.5)*2;my=(e.clientY/innerHeight-.5)*2;document.documentElement.style.setProperty('--mx',mx);document.documentElement.style.setProperty('--my',my);});
