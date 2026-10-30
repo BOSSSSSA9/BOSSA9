@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#080608">
+    <title>BOSSA9 | Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="welcome-screen" role="button" tabindex="0" aria-label="Click to enter">
+        <span class="ws-text">CLICK TO ENTER</span>
+    </div>
+    <div class="background" id="background"></div>
+    <div class="shade"></div>
+    <div class="fog fog-a"></div>
+    <div class="fog fog-b"></div><canvas id="particles"></canvas>
+    <header class="topbar"><a class="logo" href="#home"><span>✠</span> BOSSA9</a>
+        <nav><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#socials">SOCIALS</a></nav>
+        <div class="visitors"><span>◉</span><small>VISITS</small><b id="visit-count">001</b></div>
+    </header>
+    <main id="home">
+        <section class="hero">
+            <div class="vertical-mark">BERSERK <i>✠</i></div>
+            <div class="identity">
+                <div class="avatar-ring"><img id="profile-picture"
+                        src="https://images.openai.com/static-rsc-4/IGsKwcuYlZxseFIvFmxB32A535uozA4oyt3-VoeIxmRJUht1VWrT8IWLURBfqbHq2t7qCCBqIbZFhoTaW0bpSqQ-RFB8btsBeP0p4ullvHFZHkeqh9nC6ml5M-_eZmIYuM9auUye4etxWLlZ_S2VE13BytH05y-VT1RubFzgWiRUnGJtWb5_Nq2BObJDG2pW?purpose=fullsize"
+                        alt="Your profile picture"></div>
+                <p class="overline">WELCOME TO MY WORLD</p>
+                <h1 id="display-name">BOSSA9 <span>✠</span></h1>
+                <p class="tagline">GAMER <i>•</i> DEV <i>•</i> VIDEO EDITOR</p>
+                <p class="quote">“The night is darkest just before the dawn.”</p><a class="discover"
+                    href="#socials">DISCOVER MORE <span>↘</span></a>
+            </div>
+            <div class="side-note"><span class="red-dot"></span> ONLINE <i>—</i> MOROCCO</div>
+            <div class="scroll">SCROLL TO EXPLORE <span>↓</span></div>
+        </section>
+        <section class="content" id="about">
+            <div class="section-title"><small>01 / THE PERSON BEHIND THE SCREEN</small>
+                <h2>ABOUT <em>ME</em></h2>
+            </div>
+            <div class="about-card">
+                <div class="about-head"><span>✠</span> A LITTLE INTRODUCTION</div>
+                <h3>Hey, I'm <em>BOSSA9</em>.</h3>
+                <p>I'm 16 years old and currently living in Morocco 🇲🇦. I'm still a student, passionate about
+                    technology and creativity.
+
+                    💻 Web Developer – I enjoy creating websites and exploring new ideas through code.
+
+                    🎬 Video Editor – I love editing videos and bringing creative ideas to life.
+
+                    🎮 Gamer – In most of my free time, I enjoy playing games like Free Fire, GTA , Minecraft, CS, and
+                    many more.
+
+                    🚀 I'm always looking to learn new things, improve my skills, and work on exciting projects.</p>
+                <div class="facts">
+                    <div><small>COUNTRY</small><b>🇲🇦</b></div>
+                    <div><small>HOBBIES</small><b>Gaming · Dev</b></div>
+                    <div><small>FAVOURITE GAME</small><b>Free Fire · Minecraft</b></div>
+                </div>
+            </div>
+        </section>
+        <section class="content socials" id="socials">
+            <div class="section-title"><small>02 / FIND ME AROUND THE WEB</small>
+                <h2>MY <em>SOCIALS</em></h2>
+            </div>
+            <div class="social-grid"><a href="https://www.instagram.com/_bossa9_/"><span>◎</span>
+                    <div><small>FOLLOW ME</small><b>Instagram</b></div><i>↗</i>
+                </a><a href="https://open.spotify.com/user/31lja2hw5oghrm7swscui5cjxove?si=5df9661753d94e29"><span>♫</span>
+                    <div><small>MY PLAYLISTS</small><b>Spotify</b></div><i>↗</i>
+                </a><a href="disc.html"><span>◈</span>
+                    <div><small>JOIN MY COMMUNITY</small><b>Discord</b></div><i>↗</i>
+                </a><a href="youtube.html"><span>▶</span>
+                    <div><small>WATCH MORE</small><b>YouTube</b></div><i>↗</i>
+                </a></div>
+        </section>
+        <footer><span>✠ BOSSA9</span><span>MADE OF Ra bayna BOSSA9 o chweya dyal ai</span><a href="#home">BACK TO TOP ↑</a></footer>
+    </main>
+    <audio id="music" preload="auto" loop></audio>
+    <div class="music-dock"><button id="music-toggle" class="music-main" aria-label="Open music controls">♫</button>
+        <div class="music-panel" id="music-panel">
+            <div class="music-title"><span>NOW PLAYING</span><b id="song-title">Your song</b></div><button id="play"
+                class="play" aria-label="Play">▶</button>
+            <div class="volume-row"><span>VOL</span><input id="volume" type="range" min="0" max="1" step="0.01"
+                    value="0.5"><button id="mute" aria-label="Mute">◖))</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOSSA9 | DISCORD</title>
+    <meta name="theme-color" content="#080608">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Space+Grotesk:wght@400;500&display=swap">
+    <style>
+        :root { --red: #ed1736; }
+        * { box-sizing: border-box; }
+        html, body { height: 100%; }
+        body {
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            background: #080608;
+            color: #e8e6e8;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+        }
+        .bg {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background: url('assets/guts-wallpaper-hq.webp') center / cover no-repeat;
+            filter: brightness(.55) saturate(.9);
+        }
+        .bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 45%, #08060866 0%, #080608ee 85%);
+        }
+        .card {
+            width: min(480px, 100%);
+            text-align: center;
+            padding: 44px 32px 38px;
+            border: 1px solid #ed17364a;
+            background: #090709d9;
+            box-shadow: 0 20px 70px #000a;
+            backdrop-filter: blur(10px);
+            animation: appear .9s both;
+        }
+        .icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 22px;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--red);
+            border-radius: 50%;
+            color: var(--red);
+            font-size: 28px;
+            box-shadow: 0 0 28px #ed173644;
+            animation: pulse 2.8s ease-in-out infinite;
+        }
+        small {
+            display: block;
+            font-size: 9px;
+            letter-spacing: 4px;
+            color: #c4aeb4;
+        }
+        h1 {
+            margin: 12px 0 18px;
+            font: 600 clamp(28px, 7vw, 38px) Cinzel, serif;
+            letter-spacing: 5px;
+        }
+        h1 span { color: var(--red); }
+        p {
+            margin: 0 0 32px;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #b9b1b8;
+        }
+        .back {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 9px;
+            letter-spacing: 3px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--red);
+            transition: color .2s;
+        }
+        .back:hover, .back:focus-visible { color: var(--red); outline: none; }
+        .back span { color: var(--red); padding-right: 12px; font-size: 14px; }
+        @keyframes appear { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+        @keyframes pulse { 0%, 100% { box-shadow: 0 0 18px #ed173633; } 50% { box-shadow: 0 0 38px #ed173699; } }
+        @media (prefers-reduced-motion: reduce) { .card, .icon { animation: none; } }
+        @media (max-width: 700px) { .card { padding: 36px 22px 32px; } }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <main class="card">
+        <div class="icon">&#9672;</div>
+        <small>JOIN MY COMMUNITY</small>
+        <h1>DISCORD <span>&#10016;</span></h1>
+        <p>Rje3 rje3, ra makayn la discord la walo hta l-daba.<br>Mnin ykon ready, ghadi ytzad l-link hna.</p>
+        <a class="back" href="index.html#socials"><span>&larr;</span>RJE3 FI 7ALATK</a>
+    </main>
+</body>
+
+</html>
